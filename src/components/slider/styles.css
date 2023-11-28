@@ -50,3 +50,27 @@ input[type="range"]:active::-webkit-slider-thumb {
   0 0 10px 6px rgba(255, 0, 0, 0.2), 
   0 0 14px 9px rgba(255, 0, 0, 0.2);
 }
+
+.timer {
+  font-family: ACME Secret Agent;
+  color: white;
+  text-shadow: -1px 2px 0px red;
+  font-size: 16px;
+  z-index: 1000;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  padding-inline: 15px;
+  padding-top: 5px;
+  position: absolute;
+  top: -25px;
+}
+
+@media (max-width: 600px) {
+  
+  .timer {
+    font-size: 12px;
+    top: -20px;
+    padding-inline: 10px
+  }
+}

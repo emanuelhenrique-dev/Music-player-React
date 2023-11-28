@@ -80,6 +80,10 @@ button {
   fill:black;
 }
 
+.player .album .spiderimage.isplaying path {
+  fill:red;
+}
+
 .player .album .spiderimage.small {
   display: none;
   width: 43px;
@@ -126,6 +130,11 @@ button {
   border-radius:50%;
 }
 
+button.play div {
+  user-select: none;
+  pointer-events:none
+}
+
 
 .play-button {
   position: absolute;
@@ -147,16 +156,16 @@ button {
 
 /* button isplaying */
 
-.play:hover .play-button-left {
+.play.isplaying .play-button-left {
   clip-path: polygon(0 0, 30% 0, 30% 100%, 0% 100%);
   background: var(--primary-color);
 }
-.play:hover .play-button-right{
+.play.isplaying .play-button-right{
   clip-path: polygon(70% 0, 100% 0, 100% 100%, 70% 100%);
   background: var(--primary-color);
 }
 
-.player .controls button.play:hover .circle {
+.player .controls button.play.isplaying .circle {
   border-top: none;
   border-bottom: none;
   border-right:none;

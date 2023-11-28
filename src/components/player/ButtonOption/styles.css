@@ -30,8 +30,8 @@ button {
 .option{
   transition: 0.5s;
 }
-.option:hover {
-  animation: glitchy 1s linear forwards;
+.option.pressed {
+  animation: glitchy 0.8s linear infinite;
 }
 
 
