@@ -1,9 +1,316 @@
-.player {
-  background-color: rgb(7, 8, 18);
+button {
+  border: none;
+}
+
+:root {
+  --primary-color: #BC1616;
+}
+
+.player-bar {
+  background-color: #FFFFFF;
+  background-image: url(../../assets/paper-notebook.png);
+  background-size: cover;
   width: 100%;
   height: 153px;
-  position: absolute;
+  position: fixed;
+  
   z-index: 1;
   bottom: 0;
 }
 
+.player {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-inline: 50px;
+}
+
+.player .album, .player .sound {
+  width: 100%;
+  max-width: 400px;
+}
+
+.player .clipimage {
+  width: fit-content;
+  height: 80%;
+  position: absolute;
+  right: 30px;
+  top: -6px;
+}
+
+.player .album {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 42px;
+  color: black;
+
+  font-family: 'ABeeZee', sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  padding-top: 20px; 
+}
+
+.player .album .name {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: flex-start;
+}
+
+.player .album .name h3 {
+  font-weight: 400;
+}
+
+.player .album .name p {
+  color: #737373;
+
+  font-size: 20px;
+  font-style: normal;
+  line-height: 20px; /* 83.333% */
+}
+
+
+.player .album .spiderimage path {
+  fill:black;
+}
+
+.player .album .spiderimage.small {
+  display: none;
+  width: 43px;
+  height: 43px;
+}
+
+.player .album .main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
+.player .controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 80px;
+}
+
+.player .controls .main{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+
+/* Button play*/
+.player .controls button.play {
+  width: 80px;
+  height: 80px;
+  border-radius:50%;
+  background: none;
+  cursor: pointer;
+  position: relative;
+  background: none;
+}
+
+.player .controls button.play .circle {
+  width: 100%;
+  height: 100%;
+  border: 3px solid black;
+  border-radius:50%;
+}
+
+
+.play-button {
+  position: absolute;
+  top:25%;
+  left:25%;
+  width: 40px;
+  height: 40px;
+  background: black;
+  transition: clip-path .3s ease;
+}
+
+.play-button-left {
+  clip-path: polygon(0 0, 50% 25%, 50% 75%, 0% 100%);
+}
+.play-button-right {
+  clip-path: polygon(50% 25%, 100% 50%, 100% 50%, 50% 75%);
+}
+
+
+/* button isplaying */
+
+.play:hover .play-button-left {
+  clip-path: polygon(0 0, 30% 0, 30% 100%, 0% 100%);
+  background: var(--primary-color);
+}
+.play:hover .play-button-right{
+  clip-path: polygon(70% 0, 100% 0, 100% 100%, 70% 100%);
+  background: var(--primary-color);
+}
+
+.player .controls button.play:hover .circle {
+  border-top: none;
+  border-bottom: none;
+  border-right:none;
+  animation: spin 1.5s linear infinite;
+  border-color: var(--primary-color);
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+
+@media (max-width: 1300px) {
+
+  .player {
+    justify-content: space-between;
+    width: 100%;
+  }
+
+
+  .player .album {
+    position: absolute;
+    top: -110%;
+    left: -34px;
+    color: white;
+  }
+
+  .player .album::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -10vw;
+    z-index: -100;
+    width: calc(110vw + 34px);
+    height: 180%;
+    background: rgba(0, 0, 0, 0.69);
+    background: -webkit-linear-gradient(0deg, rgba(0, 0, 0, 0.69) 0%, rgba(0, 0, 0, 0) 100%);
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.69) 0%, rgba(0, 0, 0, 0) 100%);
+  }
+
+  .player .album .name {   
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-start;
+  }
+  
+  .player .album .name p {
+    color: #ffffff;
+    text-shadow: -1px 2px 0px #000;
+    font-size: 20px;
+    font-style: normal;
+    line-height: 20px; /* 83.333% */
+  }
+
+  .player .album .spiderimage {
+    display: none;
+  }
+
+  .player .album .spiderimage.small {
+    display: block;
+  }
+
+  .player .controls {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .player .sound {
+    display: none;
+  }
+
+  .player .sound .main {
+    gap: 60px;
+  }
+
+}
+
+@media (max-width: 600px) {
+  
+  .player-bar {
+    background-image: url(../../assets/paper-notebook-mobile.png);
+    width: 100%;
+    height: 70px;
+  }
+
+  .player {
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+  }
+
+  .player .controls {
+    justify-content: center;
+    gap: 36px;
+  }
+
+  .player .controls .main{
+    gap: 20px;
+  }
+    
+  /* Button play*/
+  .player .controls button.play {
+    width: 30px;/* Button play*/
+    height: 30px;/* Button play*/
+  }
+
+  .player .controls button.play .circle {
+    width: 100%;
+    height: 100%;
+    border: 3px solid black;
+    border-radius:50%;
+  }
+  
+  .play-button {
+    width: 15px;/* Button play*/
+    height: 15px;/* Button play*/
+  }
+
+
+  .player .clipimage {
+    width: 8.23px;
+    height: 28px;
+    right: 10px;
+    top: -2px;
+    z-index: 1;
+  }
+
+  .player .album {
+    top: calc(-93px - 60px);
+    left: -64px;
+  }
+
+  .player .album::after {
+    width: calc(110vw + 64px);
+    height: 185%;
+  }
+
+  .player .album .name {   
+    gap: 0;
+  }
+
+  .player .album .name h3 {
+    font-size: 22px;
+  }
+
+  .player .album .name p {
+    font-size: 18px; /* 83.333% */
+  }
+
+
+}
