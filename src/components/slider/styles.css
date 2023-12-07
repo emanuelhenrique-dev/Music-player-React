@@ -9,7 +9,7 @@
 
 .progress_bar {
   position: absolute;
-  width: calc(50% - 8px);
+  width: 0%;
   height: 4px;
   background: linear-gradient(90deg, #382222 2.49%, #C72F2F 46.7%, #F00 101.2%);
   top: 6px;

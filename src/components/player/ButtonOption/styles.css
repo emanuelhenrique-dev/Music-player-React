@@ -34,6 +34,10 @@ button {
   animation: glitchy 0.8s linear infinite;
 }
 
+.option.active {
+  filter: invert(13%) sepia(65%) saturate(5013%) hue-rotate(352deg) brightness(98%) contrast(98%);
+}
+
 
 
 

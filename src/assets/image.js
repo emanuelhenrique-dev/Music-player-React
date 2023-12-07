@@ -1,6 +1,7 @@
 import back1 from './back1.png';
 import back2 from './back2.png';
 import back3 from './back3.png';
+import back4 from './back4.png';
 import linkLogo from './likedin-logo.png';
 import gitLogo from './github-logo.png';
 import marvelLogo from './marvel-logo.png';
@@ -12,6 +13,7 @@ export {
   back1,
   back2,
   back3,
+  back4,
   linkLogo,
   gitLogo,
   marvelLogo,

@@ -5,10 +5,12 @@ import { useState, useEffect } from 'react';
 
 export const Slider = ({onChange, percentage, duration, currentTime}) => {
 
+  let value = 0;
+
   const [position, setPosition] = useState(0);
 
   useEffect(() => {
-    console.log('mudou');
+    // console.log('mudou');
     setPosition(percentage)
   }, [percentage])
 
@@ -39,10 +41,10 @@ export const Slider = ({onChange, percentage, duration, currentTime}) => {
       return `${min}m ${sec}s`
     }
   }
-
+  
   return (  
     <div className="slider_bar">
-      <input className='range' value={position} type="range" step='0.01'onChange={onChange}/>
+      <input className='range' value={(isNaN(position)) ? 0 : position} type="range" step='0.01'onChange={onChange}/>
       <div className="progress_bar" style={{
         width: `calc(${position}%)`
         }}></div>

@@ -43,9 +43,9 @@ button {
 
 .player .album {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
-  gap: 42px;
+  gap: 22px;
   color: black;
 
   font-family: 'ABeeZee', sans-serif;
@@ -194,7 +194,7 @@ button.play div {
   .player .album {
     position: absolute;
     top: -110%;
-    left: -34px;
+    left: 34px;
     color: white;
   }
 
@@ -300,13 +300,12 @@ button.play div {
   }
 
   .player .album {
-    top: calc(-93px - 60px);
-    left: -64px;
+    top: calc(-83px - 60px);
   }
 
   .player .album::after {
     width: calc(110vw + 64px);
-    height: 185%;
+    height: 175%;
   }
 
   .player .album .name {   

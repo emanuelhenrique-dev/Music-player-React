@@ -2,13 +2,14 @@ import { useState } from 'react';
 import './styles.css'
 
 
-export const ButtonOption = ({className}) => {
+export const ButtonOption = ({className, onClick}) => {
 
   const [ativo, setAtivo] = useState(false);
   let timeoutId;
 
   const handleClick = () => {
     setAtivo(true);
+    onClick();
 
     // Limpa o temporizador anterior (se houver)
     if (timeoutId) {
