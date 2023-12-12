@@ -10,7 +10,7 @@ export const Background = ({img, custom}) => {
 
   const styles = {
     // Estilo da propriedade custom
-    backgroundPosition: custom,
+    '--position': custom,
 
     backgroundImage: "url(" + img + ")",
     display: loading ? 'none' : 'block',   
@@ -36,8 +36,11 @@ export const Background = ({img, custom}) => {
 
   return ( 
     <>
-    <div className="music background" 
-    style={styles}></div>
+    <div className="background_container">
+      <div className="effect music background"  style={styles} ></div>
+      <div className="music background" style={styles}></div>
+    </div>
+
     <div className='static background' ></div>
     </>
     

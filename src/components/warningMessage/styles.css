@@ -1,0 +1,112 @@
+.backgroundMessage {
+  position: absolute;
+  z-index: 1000;
+  background-color: rgba(0, 0, 0, 0.6);
+  width: 100vw;
+  height: 100vh;
+
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.isOpen {
+  display: flex;
+}
+
+.message {
+  position: relative;
+  padding-inline: 5px;
+  width: min(80%, 600px); 
+  height: 300px;
+  background-color: #F6EF38;
+  background-image: url(../../assets/Dot-Grid2.png);
+
+  border: 8px solid #000000;
+  filter: drop-shadow(-12px 14px 0px #0D0B0E);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+
+
+  font-family: ACME Secret Agent;
+  color: black;
+  font-size: 1.4rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 2px;
+}
+
+.message .button-close {
+  position: absolute;
+  bottom: 25px;
+
+  width: 150px;
+  height: fit-content;
+  padding-block: 5px;
+  background-color: rgb(203, 34, 34);
+  border-radius: 0;
+  
+  border: 2px solid black;
+  transform: scale(1) skew(20deg);
+
+  transition: 0.5s;
+}
+
+.message .button-close p {
+  font-family: Junegull;
+  color: white;
+  font-size: 24px;
+  text-shadow: 3px 0px 0px rgba(0,0,0,1);
+  transform: skew(-20deg)
+}
+
+.message .button-close:hover {
+  transform: scale(1.1) skew(20deg)
+}
+
+.message .links{
+  display: flex;
+  gap: 5px;
+}
+
+
+.message .links a{
+  display: block;
+  text-decoration: none;
+  width: 40px;
+  height: 40px;
+  background: url(../../assets/apple-music-ico.png);
+  background-size: cover;
+}
+
+.message .links .artstation {
+  background: url(../../assets/artstation-ico.png);
+  background-size: cover;
+}
+
+
+@media (max-width : 600px) {
+  .message {
+    height: 200px;
+    font-size: 1rem;
+    font-size: 0.8rem;
+  }
+
+  .message .button-close {
+    bottom: 12px;
+  }
+
+  .message .button-close p {
+    font-size: 18px;
+  }
+
+  .message .links a{
+    width: 30px;
+    height: 30px;
+  }
+}

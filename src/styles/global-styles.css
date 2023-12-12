@@ -12,6 +12,11 @@
   src: url(../assets/fonts/crackedcode.ttf);
 }
 
+@font-face {
+   font-family: Junegull;
+   src: url(../assets/fonts/junegull.ttf);
+ }
+
 * {
   padding: 0;
   margin: 0;

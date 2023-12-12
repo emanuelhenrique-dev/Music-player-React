@@ -1,15 +1,30 @@
-.background {
-  width: 100vw;
-  height: 100vh;
-  background-size: cover;
-  background-position: 50%;
-}
-
-.music {
+.background_container {
   position: absolute;
   top: 0;
   left: 0;
   z-index: 1;
+}
+
+.background_container .background {
+  width: 100vw;
+  height: 100vh;
+  background-size: cover;
+  background-position: var(--position);
+}
+
+.background_container .music {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
+
+.background_container .effect {
+  opacity:0.5;
+  mix-blend-mode:hard-light;
+  z-index: 1;
+  background-size: cover;
+  animation:animate 8.2s linear infinite;
 }
 
 .static {
@@ -21,3 +36,45 @@
   background-position: 50%;
 }
 
+
+@keyframes animate{
+  0%{
+	background-position: var(--position) var(--position);
+	filter:hue-rotate(0deg);
+	}
+	95%{
+	background-position: var(--position) var(--position);
+	filter:hue-rotate(0deg);
+	}
+	95.5%{
+	background-position: calc(var(--position) + 5px )  var(--position);
+	}
+	96%{
+	background-position: calc(var(--position) - 5px ) var(--position);
+	}
+	96.5%{
+	background-position: calc(var(--position) + 15px ) var(--position);
+	}
+	97%{
+	background-position: calc(var(--position) + 5px ) var(--position);
+	}
+	97.5%{
+	background-position: calc(var(--position) - 25px ) var(--position);
+	}
+	98%{
+	background-position: calc(var(--position) - 50px ) var(--position);
+	}
+	98.5%{
+	background-position: var(--position) calc(var(--position) -20px );
+	}
+	98.6%{
+	background-position: calc(var(--position) - 60px ) calc(var(--position) - 20px );
+	}
+	98.8%{
+	background-position: var(--position) var(--position);
+	}
+	100%{
+	background-position: var(--position) var(--position);
+	filter:hue-rotate(360deg);
+	}
+}

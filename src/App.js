@@ -6,6 +6,7 @@ import { Background } from './components/background';
 import { Player } from './components/player';
 import { Header } from './components/header';
 import { Slider } from './components/slider';
+import { WarningMessage } from './components/warningMessage';
 
 //images_background
 import { back1, back2, back3 } from './assets/image';
@@ -20,6 +21,9 @@ export function App() {
   const [currentSong, setCurrentSong] = useState(0);
   const [randomActive, setRandomActive] = useState(false);
   const [onRepeat, setOnRepeat] = useState(false);
+
+  const [messageOpen, setMessageOpen] = useState(false);
+  const [message, setMessage] = useState('message here');
 
   const audioRef = useRef();
 
@@ -46,6 +50,15 @@ export function App() {
       setOnRepeat(true);
     } else if (onRepeat) {
       setOnRepeat(false);
+    }
+  };
+
+  const HandleMessage = (msg) => {
+    if (!messageOpen) {
+      setMessage(msg);
+      setMessageOpen(true);
+    } else {
+      setMessageOpen(false);
     }
   };
 
@@ -138,7 +151,20 @@ export function App() {
 
   return (
     <div className="App">
+      <WarningMessage
+        isOpen={messageOpen}
+        message={message}
+        onClick={HandleMessage}
+      />
       <Header />
+      <div
+        className="important"
+        onClick={() =>
+          HandleMessage(
+            'Project made for fun and learning, all rights belong to Sony and images and music to its artists'
+          )
+        }
+      ></div>
       <Background
         img={musicList[currentSong].image}
         custom={musicList[currentSong].custom}

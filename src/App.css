@@ -36,3 +36,34 @@
     transform: rotate(360deg);
   }
 }
+
+
+.important {
+  position: absolute;
+  top: 25%;
+  right: 25px;
+  width: 100px;
+  height: 100px;
+  background: url(assets/miles-art-round.png);
+  background-size: cover;
+  z-index: 100;
+  cursor: pointer;
+  animation: size 0.6s alternate-reverse infinite;
+  border-radius: 50%;
+}
+
+@media (max-width:600px) {
+  .important {
+    width: 70px;
+    height: 70px;
+  }
+}
+
+@keyframes size {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.1);
+  }
+}

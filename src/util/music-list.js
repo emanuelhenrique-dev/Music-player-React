@@ -14,7 +14,7 @@ export const musicList = [
     artist: 'Post Malone, Swae Lee',
     music: sunflower,
     image: back1,
-    custom: ''
+    custom: '50%'
   },
   {
     id: '1',
@@ -22,7 +22,7 @@ export const musicList = [
     artist: 'Lil Wayne and Ty Dolla $ign',
     music: scaredofdark,
     image: back3,
-    custom: ''
+    custom: '50%'
   },
   {
     id: '2',
