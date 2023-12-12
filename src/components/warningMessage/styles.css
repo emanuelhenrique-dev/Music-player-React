@@ -21,6 +21,7 @@
   height: 300px;
   background-color: #F6EF38;
   background-image: url(../../assets/Dot-Grid2.png);
+  background-size: 200%;
 
   border: 8px solid #000000;
   filter: drop-shadow(-12px 14px 0px #0D0B0E);
@@ -93,7 +94,7 @@
 @media (max-width : 600px) {
   .message {
     height: 200px;
-    font-size: 1rem;
+    font-size: 1.2rem;
     font-size: 0.8rem;
   }
 

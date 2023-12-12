@@ -21,6 +21,7 @@ export const Background = ({img, custom}) => {
   },[img]);
 
   const changeImage = () => {
+    console.log('mudou imagem')
     // ocultar a imagem principal
     setLoading(true);
 
@@ -28,6 +29,7 @@ export const Background = ({img, custom}) => {
     const image = new Image();
     image.onload = () => {
       setLoading(false);
+      console.log('mudou imagem 2')
     };
     
     image.src = img;
