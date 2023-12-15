@@ -1,70 +1,56 @@
-# Getting Started with Create React App
+<h1 align="center">
+  Music Player with React
+</h1>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<p align="center">
+  
+  <img alt="GitHub All Releases" src="https://img.shields.io/github/downloads/emanuelhenrique-dev/Music-player-React/total?logo=GitHub&style=flat-square">
+  
+  <img alt="GitHub top language" src="https://img.shields.io/github/languages/top/emanuelhenrique-dev/Music-player-React" />
+  
+  <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/emanuelhenrique-dev/Music-player-React" />
+  
+  <img alt="Repository size" src="https://img.shields.io/github/repo-size/emanuelhenrique-dev/Music-player-React" />
 
-## Available Scripts
+  <img alt="GitHub commit activity (branch)" src="https://img.shields.io/github/commit-activity/t/emanuelhenrique-dev/Music-player-React">
 
-In the project directory, you can run:
+  <a href="https://github.com/emanuelhenrique-dev/Music-player-React/commits/master">
+    <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/emanuelhenrique-dev/Music-player-React" />
+  </a>
 
-### `npm start`
+  <a href="https://github.com/emanuelhenrique-dev/Music-player-React/issues">
+    <img alt="Repository issues" src="https://img.shields.io/github/issues/emanuelhenrique-dev/Music-player-React" />
+  </a>
+</p>
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+<p align="center">
+  <img src=".github/desktop-preview.png" width="80%" />
+</p>
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 💻 Projeto
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Orci phasellus egestas tellus rutrum tellus pellentesque eu tincidunt tortor
 
-### `npm test`
+[Ver Projeto](https://music-player-react-amber.vercel.app/)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## 🚀 Tecnologias
+[![My Skills](https://skills.thijs.gg/icons?i=html,css,js,figma)](https://skills.thijs.gg) <span fontSize="160px" > </span>
 
-### `npm run build`
+- HTML
+- CSS
+- Javascript
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## 📔 Conhecimentos fortalecidos
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- [x] Uso básico do figma .
+- [x] Tokens no projeto`.
+- [x] css e responsividade.
+- [x] Javascript.
+- [x] Criação de itens em listas.
+- [x] Tecnicas de animação em css.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## 💻 Imagens mobile
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+<p align="center" gap="20px">
+  <img src=".github/mobile1-preview.png" width="30%" />
+  <img src=".github/mobile2-preview.png" width="30%" />
+</p>
