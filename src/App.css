@@ -1,5 +1,9 @@
 .App {
+  width: 100vw;
+  height: 100vh;
   text-align: center;
+  overflow: hidden;
+  position: relative;
 }
 
 .App-logo {
@@ -46,7 +50,7 @@
   height: 100px;
   background: url(assets/miles-art-round.png);
   background-size: cover;
-  z-index: 100;
+  z-index: 10;
   cursor: pointer;
   animation: size 0.6s alternate-reverse infinite;
   border-radius: 50%;

@@ -156,7 +156,9 @@ export function App() {
         message={message}
         onClick={HandleMessage}
       />
-      <Header />
+      <Header
+        ErrorMessage={() => HandleMessage('Funcionalidade não implementada')}
+      />
       <div
         className="important"
         onClick={() =>

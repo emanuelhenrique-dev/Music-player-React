@@ -6,6 +6,7 @@ nav {
   height: 170px;
   padding: 25px;
   z-index: 100;
+  
 }
 
 ul {
@@ -65,16 +66,20 @@ ul li {
   line-height: normal;
 }
 
+.nav-items .options > .contacts {
+  display: none;
+}
+
 .nav-items .contacts {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 24px;
-  padding-right: 60px;
+  gap: 18px;
+  
 }
 
-.nav-items .contacts img {
-  cursor: pointer;
+.nav-items .options {
+  padding-inline: 8%;
 }
 
 .nav-items .menu {
@@ -90,8 +95,8 @@ ul li {
   letter-spacing: 2px;
 
   gap: 30px;
-  padding-inline: 8%;
 }
+
 
 .nav-items .menu li {
   font-family: ACME Secret Agent;
@@ -174,14 +179,50 @@ ul li {
       transform: rotate(45deg) translate(-8px, -8px);
     }  
 
-  
-    .nav-items .menu {
+    .nav-items  .mobile-menu + .options {
+      position: absolute;
+      background-color: #FFFFFF;
+      background-image: url(../../assets/paper-notebook.png);
+      left: 120%;
+      top: 120%;
+      z-index: -1;
+
+      width: 100vw;
+      height: 100vh;
+      transition: 0.5s;
+
+      display: flex;
+      flex-direction: column;
+
+      
+    }
+
+
+    
+    .nav-items .mobile-menu.open + .options  {
+      left: -33px;
+      top: -33px;
+    }
+
+    
+    .nav-items .mobile-menu + .options .contacts {
+      display: flex;
+    }
+
+    .nav-items .options .menu {
+      width: 100%;
+      height: 100%;
+      flex-direction: column;
+
+      font-size: 28px;
+    }
+
+
+    .nav-items > .contacts {
       display: none;
     }
-  
-    .nav-items .contacts {
-      display: none;
-    }
+
+
   
 }
 
@@ -199,6 +240,11 @@ ul li {
     filter: drop-shadow(-8px 6px 0px #000);
   }
   
+  .nav-items .mobile-menu.open + .options  {
+    left: -4px;
+    top: -4px;
+  }
+
   .nav-items .logo h2 {
     font-size: 14px;
   }

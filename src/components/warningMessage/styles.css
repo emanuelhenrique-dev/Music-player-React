@@ -42,9 +42,16 @@
   letter-spacing: 2px;
 }
 
+.message > p {
+  height: 30%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+}
+
 .message .button-close {
-  position: absolute;
-  bottom: 25px;
+  /* position: absolute;
+  bottom: 25px; */
 
   width: 150px;
   height: fit-content;
