@@ -28,25 +28,26 @@
 </p>
 
 ## 💻 Projeto
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Orci phasellus egestas tellus rutrum tellus pellentesque eu tincidunt tortor
+Projeto React de um player de música, com o tema o filme do spiderman, nesse projeto fiz com intuito te anexa as bases do react, fazendo um projeto divertido. 
 
 [Ver Projeto](https://music-player-react-amber.vercel.app/)
 
 ## 🚀 Tecnologias
-[![My Skills](https://skills.thijs.gg/icons?i=html,css,js,figma)](https://skills.thijs.gg) <span fontSize="160px" > </span>
+[![My Skills](https://skills.thijs.gg/icons?i=html,css,js,figma,react)](https://skills.thijs.gg) <span fontSize="160px" > </span>
 
 - HTML
 - CSS
 - Javascript
+- React
 
 ## 📔 Conhecimentos fortalecidos
 
 - [x] Uso básico do figma .
-- [x] Tokens no projeto`.
-- [x] css e responsividade.
-- [x] Javascript.
-- [x] Criação de itens em listas.
-- [x] Tecnicas de animação em css.
+- [x] Componentização no React.
+- [x] O uso dos principais hooks.
+- [x] Props.
+- [x] Sharing State Between Components.
+- [x] Parent e Child Components.
 
 ## 💻 Imagens mobile
 
